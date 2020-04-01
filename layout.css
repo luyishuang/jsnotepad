@@ -1,0 +1,65 @@
+.notpad-dlg-goto {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    position: fixed;
+    z-index: 10;
+}
+.dialogbox{
+    border:1px solid #0f7fdb;
+    box-shadow: 10px 10px 10px #d6d6d6;
+    box-sizing: border-box;
+    cursor: default;
+    width: 293px;
+    height: 160px;
+    margin: 0 auto;
+    top: 100px;
+    position: relative;
+}
+.titlebar{
+    background-color: white;
+    font-size: 1.3em;
+    height: 30px;
+}
+
+.title{
+    left: 10px;
+    line-height: 30px;
+    position: absolute;
+    margin: 0;
+
+}
+.close-btn{
+    color: grey;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 30px;
+}
+.main{
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    height: 128px;
+    padding:12px;
+    position: relative;
+}
+.txt-line-num{
+    box-sizing: border-box;
+    height: 30px;
+    width: 266px;
+    margin: 10px 0;
+}
+.notpad-dlg-goto input[type="button"]{
+    width: 86px;
+    height: 26px;
+    position: absolute;
+    bottom: 16px;
+}
+.btn-goto{
+    right: 108px;
+}
+.btn-cancel{
+    right: 14px;
+}

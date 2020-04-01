@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goto dialog的测试页面</title>
+    <link rel="stylesheet" href='./layout.css' />
+</head>
+
+<body>
+    <input id='popup' type="button" value="弹出对话框" />
+    <hr>
+
+    <!-- <div class="notpad-dlg-goto">
+        <div class="dialogbox">
+            <div class="titlebar">
+                <p class="title">转到指定行</p>
+                <span class="close-btn">✖</span>
+            </div>
+            <div class="main">
+                <label>行号(L):</label>
+                <br>
+                <input class="txt-line-num" type="text" autofocus/>
+                <br>
+                <input class="btn-goto" type="button" value="转到"/>
+                <input class="btn-cancel" type="button" value="取消"/>
+            </div>
+        </div>
+    </div> -->
+
+
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        $(function () {
+            var $digDlg = $('#popup');
+
+            $digDlg.click(function () {
+                $dlgGoto.show({
+                    num: 6,
+                    title: '同意',
+                    onClick: function () {
+                        alert('就知道你会同意的')
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
